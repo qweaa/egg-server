@@ -211,7 +211,7 @@
         "context": "D:\\study\\egg-server",
         "entry": {
           "admin": [
-            "D:\\study\\egg-server\\node_modules\\webpack-hot-middleware/client?path=http://127.0.0.1:9001/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+            "D:\\study\\egg-server\\node_modules\\webpack-hot-middleware/client?path=http://127.0.0.1:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
             "D:\\study\\egg-server\\app\\web\\page\\admin\\index.js"
           ]
         },
@@ -402,7 +402,7 @@
               "EASY_ENV_IS_NODE": false,
               "EASY_ENV_LOCAL_PUBLIC_PATH": "\"/public/\"",
               "EASY_ENV_PUBLIC_PATH": "\"/public/\"",
-              "EASY_ENV_HOST_URL": "\"http://127.0.0.1:9001\""
+              "EASY_ENV_HOST_URL": "\"http://127.0.0.1:9000\""
             },
             "__plugin__": "DefinePlugin",
             "__lable__": "define"
@@ -427,7 +427,7 @@
               "generate": null,
               "sort": null,
               "baseDir": "D:\\study\\egg-server",
-              "host": "http://127.0.0.1:9001",
+              "host": "http://127.0.0.1:9000",
               "proxy": true,
               "publicPath": "/public/",
               "localPublicPath": "/public/",
