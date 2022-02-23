@@ -40,5 +40,14 @@ module.exports = app => {
     },
   };
 
+  exports.httpProxy = {
+    '/qyzx': {
+      target: 'https://qyzx.smartreply.iflyvoice.com:20104',
+      pathRewrite: {
+        '^/qyzx': ''
+      }
+    }
+  };
+
   return exports;
 };

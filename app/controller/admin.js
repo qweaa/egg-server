@@ -1,6 +1,10 @@
 'use strict';
-const egg = require('egg');
-module.exports = class AdminController extends egg.Controller {
+const CommonController = require('../lib/commonController');
+module.exports = class AdminController extends CommonController {
+  constructor(ctx) {
+    super(ctx)
+  }
+
   async home(ctx) {
     // const url = ctx.url.replace(/\/admin/, '');
     await ctx.renderClient('admin.js', {
@@ -10,7 +14,7 @@ module.exports = class AdminController extends egg.Controller {
   }
 
   async testHttp(ctx) {
-    const res = await this.ctx.getHttp('https://qyzx.smartreply.iflyvoice.com:20104/nlp/wechat/activity/video/listNewest', {
+    const res = await this.getHttp('/nlp/wechat/activity/video/listNewest', {
       activityId: '20220204',
       state: 1,
       current: 1,

@@ -10,12 +10,15 @@ module.exports = {
   target: 'web',
   resolve: {
     alias: {
-      '@': resolve('app/web')
+      '@': resolve('app/web'),
+      'asset': resolve('app/web/asset'),
+      'component': resolve('app/web/component'),
+      'page': resolve('app/web/page')
     }
   },
   entry: {
     admin: 'app/web/page/admin/index.js',
   },
   cssExtract: true,
-  dll: ['vue', 'vue-router', 'vuex', 'axios', 'vuex-router-sync', 'vue-i18n']
+  dll: ['vue', 'vue-router', 'vuex', 'axios', 'vuex-router-sync']
 };

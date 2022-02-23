@@ -10,6 +10,8 @@ export default {
     return {};
   },
   mounted() {
+    // /nlp/wechat/activity/video/listNewest
+    // /api/admin/testHttp
     this.$http
       .get("/api/admin/testHttp")
       .then((data) => {

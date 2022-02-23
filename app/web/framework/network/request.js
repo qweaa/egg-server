@@ -31,7 +31,9 @@ axios.interceptors.request.use(function (config) {
 // 添加响应拦截器
 axios.interceptors.response.use(function (response) {
   // 对响应数据做点什么
-  const res = response.data.data;
+  // response.data.data 是egg服务的返回
+  // response.data 是ajax请求其他服务器的返回
+  const res = response.data.data || response.data;
 
   if (res.code !== 1) {
     return Promise.reject(res)

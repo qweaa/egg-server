@@ -109,6 +109,14 @@
       "checkAddress": "D:\\study\\egg-server\\node_modules\\egg-security\\config\\config.default.js"
     }
   },
+  "httpProxy": {
+    "/qyzx": {
+      "target": "D:\\study\\egg-server\\config\\config.default.js",
+      "pathRewrite": {
+        "^/qyzx": "D:\\study\\egg-server\\config\\config.default.js"
+      }
+    }
+  },
   "view": {
     "cache": "D:\\study\\egg-server\\config\\config.local.js",
     "root": "D:\\study\\egg-server\\node_modules\\egg-view\\config\\config.default.js",
@@ -151,7 +159,8 @@
           "asset": "D:\\study\\egg-server\\config\\config.local.js",
           "component": "D:\\study\\egg-server\\config\\config.local.js",
           "framework": "D:\\study\\egg-server\\config\\config.local.js",
-          "@": "D:\\study\\egg-server\\config\\config.local.js"
+          "@": "D:\\study\\egg-server\\config\\config.local.js",
+          "page": "D:\\study\\egg-server\\config\\config.local.js"
         }
       },
       "externals": "D:\\study\\egg-server\\config\\config.local.js",
@@ -294,6 +303,7 @@
     "description": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
     "scripts": {
       "dev": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
+      "serve": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
       "start": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
       "debug": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
       "clean": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
@@ -308,6 +318,7 @@
       "egg": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
       "egg-bin": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
       "egg-cors": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
+      "egg-http-proxy": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
       "egg-logger": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
       "egg-scripts": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
       "egg-validate": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
