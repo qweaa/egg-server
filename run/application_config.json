@@ -142,6 +142,9 @@
       "scheduleLogger": {
         "consoleLevel": "NONE",
         "file": "egg-schedule.log"
+      },
+      "reportLogger": {
+        "file": "D:\\study\\egg-server\\logs\\report-logger.log"
       }
     },
     "schedule": {

@@ -43,6 +43,15 @@
     "allowDebugAtProd": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js",
     "enablePerformanceTimer": "D:\\study\\egg-server\\node_modules\\egg\\config\\config.default.js"
   },
+  "customLogger": {
+    "reportLogger": {
+      "file": "D:\\study\\egg-server\\config\\config.default.js"
+    },
+    "scheduleLogger": {
+      "consoleLevel": "D:\\study\\egg-server\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "D:\\study\\egg-server\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
   "static": {
     "prefix": "D:\\study\\egg-server\\config\\config.default.js",
     "dir": "D:\\study\\egg-server\\config\\config.default.js",
@@ -249,12 +258,6 @@
     "eventSources": {
       "default": "D:\\study\\egg-server\\node_modules\\egg-watcher\\config\\config.default.js",
       "development": "D:\\study\\egg-server\\node_modules\\egg-watcher\\config\\config.default.js"
-    }
-  },
-  "customLogger": {
-    "scheduleLogger": {
-      "consoleLevel": "D:\\study\\egg-server\\node_modules\\egg-schedule\\config\\config.default.js",
-      "file": "D:\\study\\egg-server\\node_modules\\egg-schedule\\config\\config.default.js"
     }
   },
   "schedule": {

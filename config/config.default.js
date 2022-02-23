@@ -17,6 +17,12 @@ module.exports = app => {
     dir: path.join(app.baseDir, 'logs')
   };
 
+  exports.customLogger = {
+    reportLogger: {
+      file: path.join(app.baseDir, 'logs/report-logger.log'),
+    }
+  }
+
   exports.static = {
     prefix: '/public/',
     dir: path.join(app.baseDir, 'public')

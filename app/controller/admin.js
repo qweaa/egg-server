@@ -14,6 +14,7 @@ module.exports = class AdminController extends CommonController {
   }
 
   async testHttp(ctx) {
+    ctx.app.loggers.reportLogger.info(`[测试] ${ctx.url}`)
     const res = await this.getHttp('/nlp/wechat/activity/video/listNewest', {
       activityId: '20220204',
       state: 1,
