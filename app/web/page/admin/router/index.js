@@ -14,31 +14,25 @@ export const routes = [{
   },
   component: Dashboard
 }, {
-  path: '/picture',
+  path: '/directory/create',
   meta: {
-    title: '图片管理',
+    title: '新增文件夹',
+    icon: 'el-icon-picture',
+  },
+  component: () => import('../view/directory/create.vue'),
+}, {
+  path: '/directory',
+  meta: {
+    title: '文件夹管理',
     icon: 'el-icon-picture',
   },
   component: CommonLayout,
-  redirect: '/picture/index',
+  redirect: '/directory/list',
   children: [{
-    path: 'index',
-    component: () => import('../view/picture/index.vue'),
+    path: '/list/:id',
+    component: () => import('../view/directory/list.vue'),
     meta: {
-      title: '管理列表',
-    }
-  }, {
-    path: 'upload',
-    component: () => import('../view/picture/upload.vue'),
-    meta: {
-      title: '上传图片',
-    }
-  }, {
-    hidden: true,
-    path: 'update',
-    component: () => import('../view/picture/upload.vue'),
-    meta: {
-      title: '边距图片',
+      title: '图片',
     }
   }]
 }]

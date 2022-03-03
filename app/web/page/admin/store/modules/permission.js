@@ -1,9 +1,10 @@
 import {
   routes
 } from '@/page/admin/router'
+import http from '@/framework/network/request';
 
 const state = {
-  routes: routes,
+  routes: null,
   permission_route_names: []
 }
 
@@ -16,7 +17,36 @@ const mutations = {
   }
 }
 
-const actions = {}
+
+const actions = {
+  generateRoutes({
+    commit
+  }) {
+    return new Promise(resolve => {
+      http.get('/api/admin/getDirectory').then(data => {
+        for (let i = 0; i < routes.length; i++) {
+          if (routes[i].path === '/directory') {
+            const base = routes[i].children[0];
+            const _children = [];
+            for (let j of data.data) {
+              _children.push({
+                ...base,
+                path: `/list/${j.id}`,
+                meta: {
+                  ...base.meta,
+                  title: j.name
+                }
+              })
+            }
+            routes[i].children = _children;
+            commit('SET_ROUTES', routes)
+            break;
+          }
+        }
+      })
+    })
+  }
+}
 
 export default {
   namespaced: true,

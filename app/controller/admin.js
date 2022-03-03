@@ -23,4 +23,20 @@ module.exports = class AdminController extends CommonController {
     })
     ctx.body = res;
   }
+
+  async getDirectory(ctx) {
+    const res = {
+      data: {
+        data: [{
+          id: 1,
+          name: '图片',
+        }, {
+          id: 2,
+          name: '视频',
+        }],
+        code: 1,
+      },
+    }
+    ctx.body = res;
+  }
 };

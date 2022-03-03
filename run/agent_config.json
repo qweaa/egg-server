@@ -11,13 +11,13 @@
       "domainWhiteList": [
         "http://localhost:7001",
         "http://127.0.0.1:7001",
-        "http://192.168.1.190:7001",
+        "http://192.168.1.112:7001",
         "http://localhost:9000",
         "http://127.0.0.1:9000",
-        "http://192.168.1.190:9000",
+        "http://192.168.1.112:9000",
         "http://localhost:9001",
         "http://127.0.0.1:9001",
-        "http://192.168.1.190:9001"
+        "http://192.168.1.112:9001"
       ],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
@@ -110,7 +110,7 @@
         "file": "egg-schedule.log"
       },
       "reportLogger": {
-        "file": "D:\\study\\egg-server\\logs\\reportLogger.log"
+        "file": "D:\\study\\egg-server\\logs\\report-logger.log"
       }
     },
     "schedule": {
@@ -214,7 +214,7 @@
         "context": "D:\\study\\egg-server",
         "entry": {
           "admin": [
-            "D:\\study\\egg-server\\node_modules\\webpack-hot-middleware/client?path=http://127.0.0.1:9001/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+            "D:\\study\\egg-server\\node_modules\\webpack-hot-middleware/client?path=http://127.0.0.1:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
             "D:\\study\\egg-server\\app\\web\\page\\admin\\index.js"
           ]
         },
@@ -405,7 +405,7 @@
               "EASY_ENV_IS_NODE": false,
               "EASY_ENV_LOCAL_PUBLIC_PATH": "\"/public/\"",
               "EASY_ENV_PUBLIC_PATH": "\"/public/\"",
-              "EASY_ENV_HOST_URL": "\"http://127.0.0.1:9001\""
+              "EASY_ENV_HOST_URL": "\"http://127.0.0.1:9000\""
             },
             "__plugin__": "DefinePlugin",
             "__lable__": "define"
@@ -430,7 +430,7 @@
               "generate": null,
               "sort": null,
               "baseDir": "D:\\study\\egg-server",
-              "host": "http://127.0.0.1:9001",
+              "host": "http://127.0.0.1:9000",
               "proxy": true,
               "publicPath": "/public/",
               "localPublicPath": "/public/",
@@ -453,15 +453,7 @@
                 "names": [
                   "vendor"
                 ],
-                "chunks": [
-                  {
-                    "id": "vendor.js",
-                    "name": "vendor",
-                    "outputName": "js/vendor.js",
-                    "outputPath": "/public/js/vendor.js",
-                    "filepath": "C:\\Users\\admin\\AppData\\Local\\Temp\\easywebpack\\egg-server\\dev\\dll\\file\\js\\vendor.js"
-                  }
-                ],
+                "chunks": [],
                 "dll": [
                   {
                     "name": "vendor",
@@ -512,278 +504,6 @@
           {
             "__plugin__": "VueLoaderPlugin",
             "__lable__": "vueloader"
-          },
-          {
-            "opts": {
-              "assets": [
-                {
-                  "id": "vendor.js",
-                  "name": "vendor",
-                  "outputName": "js/vendor.js",
-                  "outputPath": "/public/js/vendor.js",
-                  "filepath": "C:\\Users\\admin\\AppData\\Local\\Temp\\easywebpack\\egg-server\\dev\\dll\\file\\js\\vendor.js"
-                }
-              ]
-            },
-            "__plugin__": "AssetFileWebpackPlugin",
-            "__lable__": "dllAsset"
-          },
-          {
-            "options": {
-              "context": "D:\\study\\egg-server",
-              "manifest": {
-                "name": "vendor",
-                "content": {
-                  "./node_modules/assert/assert.js": {
-                    "id": "./node_modules/assert/assert.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/index.js": {
-                    "id": "./node_modules/axios/index.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/adapters/xhr.js": {
-                    "id": "./node_modules/axios/lib/adapters/xhr.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/axios.js": {
-                    "id": "./node_modules/axios/lib/axios.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/cancel/Cancel.js": {
-                    "id": "./node_modules/axios/lib/cancel/Cancel.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/cancel/CancelToken.js": {
-                    "id": "./node_modules/axios/lib/cancel/CancelToken.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/cancel/isCancel.js": {
-                    "id": "./node_modules/axios/lib/cancel/isCancel.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/core/Axios.js": {
-                    "id": "./node_modules/axios/lib/core/Axios.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/core/InterceptorManager.js": {
-                    "id": "./node_modules/axios/lib/core/InterceptorManager.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/core/createError.js": {
-                    "id": "./node_modules/axios/lib/core/createError.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/core/dispatchRequest.js": {
-                    "id": "./node_modules/axios/lib/core/dispatchRequest.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/core/enhanceError.js": {
-                    "id": "./node_modules/axios/lib/core/enhanceError.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/core/settle.js": {
-                    "id": "./node_modules/axios/lib/core/settle.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/core/transformData.js": {
-                    "id": "./node_modules/axios/lib/core/transformData.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/defaults.js": {
-                    "id": "./node_modules/axios/lib/defaults.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/helpers/bind.js": {
-                    "id": "./node_modules/axios/lib/helpers/bind.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/helpers/btoa.js": {
-                    "id": "./node_modules/axios/lib/helpers/btoa.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/helpers/buildURL.js": {
-                    "id": "./node_modules/axios/lib/helpers/buildURL.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/helpers/combineURLs.js": {
-                    "id": "./node_modules/axios/lib/helpers/combineURLs.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/helpers/cookies.js": {
-                    "id": "./node_modules/axios/lib/helpers/cookies.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/helpers/isAbsoluteURL.js": {
-                    "id": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/helpers/isURLSameOrigin.js": {
-                    "id": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/helpers/normalizeHeaderName.js": {
-                    "id": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/helpers/parseHeaders.js": {
-                    "id": "./node_modules/axios/lib/helpers/parseHeaders.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/helpers/spread.js": {
-                    "id": "./node_modules/axios/lib/helpers/spread.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/axios/lib/utils.js": {
-                    "id": "./node_modules/axios/lib/utils.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/console-browserify/index.js": {
-                    "id": "./node_modules/console-browserify/index.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/is-buffer/index.js": {
-                    "id": "./node_modules/is-buffer/index.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/object-assign/index.js": {
-                    "id": "./node_modules/object-assign/index.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/process/browser.js": {
-                    "id": "./node_modules/process/browser.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/util/node_modules/inherits/inherits_browser.js": {
-                    "id": "./node_modules/util/node_modules/inherits/inherits_browser.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/util/support/isBufferBrowser.js": {
-                    "id": "./node_modules/util/support/isBufferBrowser.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/util/util.js": {
-                    "id": "./node_modules/util/util.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/vue-router/dist/vue-router.esm.js": {
-                    "id": "./node_modules/vue-router/dist/vue-router.esm.js",
-                    "buildMeta": {
-                      "exportsType": "namespace",
-                      "providedExports": [
-                        "default"
-                      ]
-                    }
-                  },
-                  "./node_modules/vue/dist/vue.runtime.esm.js": {
-                    "id": "./node_modules/vue/dist/vue.runtime.esm.js",
-                    "buildMeta": {
-                      "exportsType": "namespace",
-                      "providedExports": [
-                        "default"
-                      ]
-                    }
-                  },
-                  "./node_modules/vuex-router-sync/index.js": {
-                    "id": "./node_modules/vuex-router-sync/index.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  },
-                  "./node_modules/vuex/dist/vuex.esm.js": {
-                    "id": "./node_modules/vuex/dist/vuex.esm.js",
-                    "buildMeta": {
-                      "exportsType": "namespace",
-                      "providedExports": [
-                        "default",
-                        "Store",
-                        "createLogger",
-                        "createNamespacedHelpers",
-                        "install",
-                        "mapActions",
-                        "mapGetters",
-                        "mapMutations",
-                        "mapState"
-                      ]
-                    }
-                  },
-                  "./node_modules/webpack/buildin/global.js": {
-                    "id": "./node_modules/webpack/buildin/global.js",
-                    "buildMeta": {
-                      "providedExports": true
-                    }
-                  }
-                }
-              }
-            },
-            "__plugin__": "DllReferencePlugin",
-            "__lable__": "vendorDllReference"
           }
         ],
         "optimization": {

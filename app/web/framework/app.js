@@ -17,7 +17,13 @@ export default class App {
     app.$mount('#app');
   }
 
-  fetch(store, router) {
+  async fetch(store, router, r) {
+    if (!store.getters.permission_routes) {
+      await store.dispatch('permission/generateRoutes')
+    }
+
+    // r.next({ ...r.to, replace: true })
+
     const matchedComponents = router.getMatchedComponents();
     if (!matchedComponents) {
       return Promise.reject('No Match Component');
@@ -43,8 +49,13 @@ export default class App {
       store,
     } = this.config;
     const router = createRouter();
-    router.afterEach(() => {
-      this.fetch(store, router);
+    router.afterEach((to, from, next) => {
+      const r = {
+        to,
+        from,
+        next
+      };
+      this.fetch(store, router, r);
     });
     sync(store, router);
     return {

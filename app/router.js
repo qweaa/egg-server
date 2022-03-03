@@ -8,4 +8,5 @@ module.exports = app => {
   router.get('/admin(/.+)?', controller.admin.home);
 
   router.get('/api/admin/testHttp', controller.admin.testHttp);
+  router.get('/api/admin/getDirectory', controller.admin.getDirectory);
 };
