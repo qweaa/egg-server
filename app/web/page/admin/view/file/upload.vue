@@ -1,5 +1,5 @@
 <template>
-  <div>picture upload page</div>
+  <div>file upload and update page</div>
 </template>
 <script>
 export default {

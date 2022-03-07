@@ -4,7 +4,7 @@ import {
 import http from '@/framework/network/request';
 
 const state = {
-  routes: null,
+  routes: routes,
   permission_route_names: []
 }
 

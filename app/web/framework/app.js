@@ -18,9 +18,9 @@ export default class App {
   }
 
   async fetch(store, router, r) {
-    if (!store.getters.permission_routes) {
-      await store.dispatch('permission/generateRoutes')
-    }
+    // if (!store.getters.permission_routes) {
+    //   await store.dispatch('permission/generateRoutes')
+    // }
 
     // r.next({ ...r.to, replace: true })
 
