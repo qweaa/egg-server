@@ -9,11 +9,9 @@
   "runtime.js": "/public/js/runtime.js",
   "font/element-icons.ttf": "/public/font/element-icons.ttf",
   "font/element-icons.woff": "/public/font/element-icons.woff",
-  "vendor.js": "/public/js/vendor.js",
   "deps": {
     "admin.js": {
       "js": [
-        "/public/js/vendor.js",
         "/public/js/runtime.js",
         "/public/js/chunk/common.js",
         "/public/js/chunk/admin.js"
